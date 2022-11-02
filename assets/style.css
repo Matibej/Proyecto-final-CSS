@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Rubik, sans-serif;
+    list-style: none;
+}
+
+:root{
+    --backgroud-color-1: #EDDDD4;
+    --nav-color: #283D3B;
+    --text-color-1: #C44536;
+    --text-color-2: #197278;
+    --background-color-2: #772E25;
+    --color-1: #AE9D96;
+    --color-2: #D99185;
+    --color-3: #83A8A6;
+    --color-4: #F7DBA7;
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    background: var(--nav-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 100px;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo a{
+    font-size: 30px;
+    color: var(--text-color-1);
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+/* navbar */
+
+nav {
+    color: var(--text-color-1);
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.navbar-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list a{
+    color: var(--text-color-1);
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s ease-out;
+}
+
+.navbar-list a:hover{
+    color: var(--backgroud-color-1);
+    transition: 0.5s ease-in;
+}
+
+
+
+/* main */
+
+main{
+    width: 100%;
+    height: auto;
+    background: var(--color-2);
+    
+}
+
+/* hero */
+
+.hero{
+    margin-top: 150px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-4);
+    padding: 30px 50px 100px 50px;
+    }
+
+.hero-intro{
+    width: 60%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1{
+    color: var(--text-color-1);
+    font-size: 45px;
+    
+    
+    
+}
+
+.hero-intro p{
+    font-size: 24px;
+    color: var(--nav-color)
+}
+
+.hero-img{
+    background-color: var(--backgroud-color-1);
+    padding: 30px;
+    border-radius: 20% 40% 10% 50%;
+
+}
+
+.hero-img img{
+    height: 300px;
+}
+
+/* aboutus */
+
+#aboutus{
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-background{
+    width: 100%;
+    height: 500px;
+    background: url(./images/pexels-lukas-1352296.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heladeria-intro{
+    width: 60%;
+    border: 10px solid rgba(255, 255, 255, 0.692);
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #283D3B;
+    background-color: #fcd6cfcc;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.heladeria-intro h2{
+    font-size: 30px;
+}
+
+.heladeria-intro p{
+    font-size: 18px;
+}
+
+
+/* productos */
+
+#productos{
+    background: url(./images/pexels-francesco-ungaro-998641.jpg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px;
+    width: 100%;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+
+.productos-text{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
+}
+
+.productos-text h2{
+    font-size: 30px;
+    color: var(--color-4);
+}
+
+.productos-text p{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-4);
+    
+}
+
+
+.categorias{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 250px 250px;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+   
+}
+
+
+.categoria-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+/* categoria cucurucho */
+
+.cat-cucuruchos{
+    background: url(./images/categoria-cucurucho.jpg) no-repeat center/cover;
+    
+    
+}
+
+.cat-cucuruchos a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-cucuruchos:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* categoria palitos */
+
+.cat-palitos {
+    background: url(./images/categoria_palito.jpg) no-repeat center/cover;
+    
+
+}
+
+.cat-palitos a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-palitos:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+
+/* categoria tortas */
+
+.cat-tortas{
+    background: url(./images/categoria_torta.jpg) no-repeat center/cover;
+    
+}
+
+.cat-tortas a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-tortas:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* categoria batidos */
+
+.cat-batidos{
+    background: url(./images/categoria_batido.jpg) no-repeat center/cover;
+    
+}
+
+.cat-batidos a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-batidos:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+/* categoria familiar */
+
+.cat-familiar{
+    background: url(./images/categoria_familiar.jpg) no-repeat center/cover;
+   
+}
+
+.cat-familiar a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-familiar:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+/* categoria postre */
+
+.cat-postres{
+    background: url(./images/categoria_postre.jpg) no-repeat center/cover;
+    
+}
+
+.cat-postres a{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.cat-postres:hover a{
+    display: flex;
+    color: var(--backgroud-color-1);
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1972787a;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* precios y ofertas */
+
+.preciosYofertas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.box-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-4);
+    padding: 20px;
+    gap: 20px;
+    border-radius: 1rem;
+    background: rgb(34, 31, 31)
+    
+}
+
+.box-item img{
+    height: 200px;
+    border-radius: 1rem;
+    
+ }
+
+ .item-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+    
+
+
+.item-price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-price a{
+    padding: 10px;
+    border-radius: 0.5rem;
+    background: rgb(217,145,133);
+    background: linear-gradient(90deg, rgba(217,145,133,1) 0%, rgba(247,219,167,1) 64%);
+    color: var(--background-color-2);
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.item-price a:hover{
+    background: rgba(217, 146, 133);
+    background: linear-gradient(90deg, rgba(217,145,133,70%) 0%, rgba(247,219,167,70%) 64%);
+    
+}

@@ -84,7 +84,7 @@ nav {
 main{
     width: 100%;
     height: auto;
-    background: var(--color-2);
+    
     
 }
 
@@ -463,4 +463,221 @@ h1{
     background: rgba(217, 146, 133);
     background: linear-gradient(90deg, rgba(217,145,133,70%) 0%, rgba(247,219,167,70%) 64%);
     
+}
+
+/* ubicacion */
+
+
+
+.map-details{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    right: 50px;
+    background: var(--nav-color)
+}
+
+.clock, .delivery, .minimun{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-4);
+}
+
+.clock i, .delivery i, .minimun i{
+    font-size: 40px;
+}
+
+.clock span, .delivery span, .minimun span{
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+/* contacto */
+
+#contacto{
+    background: var(--text-color-2);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto h2{
+    color: var(--color-1);
+    font-size: 45px;
+}
+
+form{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.datospersonales{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.datospersonales input{
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+    outline: none;
+    padding: 0px 0px 0px 10px;
+}
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.consulta textarea{
+    outline: none;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+}
+
+.consulta input{
+    width: 100%;
+    height: 30px;
+    
+}
+
+.contacto-alternativo{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-2);
+    gap: 50px;
+    font-size: 24px;
+    -webkit-text-stroke: 1px var(--nav-color);
+    font-weight: 600;
+    width: 40%;
+    
+}
+
+.redes-sociales a{
+    color: var(--color-2);
+    transition: 0.5s ease-out;
+    -webkit-text-stroke: 1px var(--nav-color);
+    width: 150px;
+}
+
+.redes-sociales a:hover{
+    color: var(--color-4);
+    transition: 0.5s ease-in;
+}
+
+.fa-whatsapp{
+    font-size: 30px;
+}
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-4);
+    font-size: 25px;
+    -webkit-text-stroke: 1px var(--nav-color);
+}
+
+.instagram h3{
+    align-self: center;
+}
+
+.fa-instagram{
+    font-size: 30px;
+}
+
+.instagram a{
+    color: var(--color-4);
+    -webkit-text-stroke: 1px var(--nav-color);
+    font-weight: 600;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.instagram a:hover{
+    
+    color: var(--backgroud-color-1);
+    transition: 0.5s ease-in;
+}
+
+.galeria-insta{
+
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    grid-template-rows: 200px 200px 200px;
+    background: white;
+    height: 400px;
+    gap: 1px;
+}
+
+.galeria-items{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease-in;
+    border: 1px solid white;
+    
+    
+}
+
+.galeria-items:hover{
+    opacity: 90%;
+    transition: 0.5s ease-out;
+}
+
+.g-item-1{
+    background: url(./images/instagram1.jpg) no-repeat center/cover;
+
+}
+
+.g-item-2{
+    background: url(./images/instagram2.jpg) no-repeat center/cover;
+
+}
+
+.g-item-3{
+    background: url(./images/instagram3.jpg) no-repeat center/cover;
+
+}
+
+.g-item-4{
+    background: url(./images/instagram4.jpg) no-repeat center/cover;
+
+}
+
+.g-item-5{
+    background: url(./images/instagram5.jpg) no-repeat center/cover;
+
+}
+
+.g-item-6{
+    background: url(./images/instagram6.jpg) no-repeat center/cover;
+
 }

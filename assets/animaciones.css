@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-top{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right{
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+@keyframes slide-left{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+h1{
+    animation: fade 1s ease-in, slide-left 1.3s ease-in-out;
+}
+
+.hero-intro p{
+    animation: fade 1.3s ease-in, slide-left 1.5s ease-in-out;
+    
+}
+
+.hero-img{
+    animation: fade 1s ease-in, slide-right 1.3s ease-in-out;
+}
+
+.heladeria-intro{
+    animation: fade 1s ease-in, slide-top 1.3s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.productos-text h2{
+    animation: fade 1.3s ease-in, slide-left 1.5s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.productos-text p{
+    animation: fade 1s ease-in, slide-right 1.3s ease-in-out;
+    animation-delay: 0.5s;
+}

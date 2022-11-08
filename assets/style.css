@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +9,7 @@
     text-decoration: none;
     font-family: Rubik, sans-serif;
     list-style: none;
+
 }
 
 :root{
@@ -22,6 +24,8 @@
     --color-4: #F7DBA7;
 }
 
+
+
 header{
     height: 150px;
     width: 100%;
@@ -34,6 +38,7 @@ header{
     top: 0;
     position: fixed;
     z-index: 3;
+    
 }
 
 .logo a{
@@ -52,11 +57,16 @@ header{
 
 /* navbar */
 
+#menu-toggle, .menu-label{
+    display:none
+}
+
 nav {
     color: var(--text-color-1);
     display: flex;
     gap: 40px;
     width: 100%;
+    max-width: 1400px;
 }
 
 .navbar-list{
@@ -99,6 +109,7 @@ main{
     align-items: center;
     background-color: var(--color-4);
     padding: 30px 50px 100px 50px;
+    
     }
 
 .hero-intro{
@@ -107,6 +118,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    max-width: 1400px;
 }
 
 h1{
@@ -167,6 +179,7 @@ h1{
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
+    max-width: 1400px;
 }
 
 .heladeria-intro h2{
@@ -220,6 +233,7 @@ h1{
     width: 100%;
     gap: 10px;
     justify-content: center;
+    
    
 }
 
@@ -411,6 +425,7 @@ h1{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px;
     justify-content: center;
+    overflow: auto;
     
 }
 
@@ -511,6 +526,7 @@ h1{
     gap: 100px;
     justify-content: center;
     align-items: center;
+    
 }
 
 #contacto h2{
@@ -564,6 +580,7 @@ form{
     width: 100%;
     justify-content: space-between;
     background: url(./images/instagram3.jpg) no-repeat center/cover;
+    max-width: 1200px;
 }
 
 
@@ -576,7 +593,8 @@ form{
     font-size: 24px;
     font-weight: 600;
     padding: 20px 0 0 20px;
-    background: linear-gradient(to left, white, rgba(255, 255, 255, 0.616))
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0.616));
+    
 }
 
 
@@ -728,3 +746,5 @@ footer p{
 footer span{
     font-weight: 600;
 }
+
+

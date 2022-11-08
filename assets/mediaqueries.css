@@ -1,0 +1,286 @@
+@media (max-width:1050px) {
+
+    .navbar-list {
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: #197278;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+      }
+
+      .navbar-list a{
+        font-weight: 600;
+        color: #EDDDD4;;
+      }
+
+      .menu-label{
+        display: flex;
+        cursor: pointer;
+      }
+
+      #menu-toggle:checked + .navbar-list {
+        display: flex;
+      }
+
+    header{
+        padding: 0;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+
+    }
+
+    nav{
+        width: 100px;
+    }
+
+    .hero{
+        margin-top: 100px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .logo a{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .logo img{
+        height: 30px;
+        width: 40px;
+    }
+
+
+    .hero{
+        width: 100%;
+    }
+
+    .hero-intro{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-intro h1{
+        font-size: 28px;
+    }
+
+    .hero-intro p{
+        font-size: 18px;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    #aboutus{
+        padding: 5px 0;
+        overflow: scroll;
+    }
+
+    .aboutus-background{
+        height: auto;
+        background: #fcd6cfcc;
+        text-align: center;
+        
+    }
+
+    .heladeria-intro{
+        width: 100%;
+        border-radius: unset;
+        
+        
+    }
+
+    .heladeria-intro h2{
+        font-size: 18px;
+    }
+
+    .heladeria-intro p{
+        font-size: 14px;
+    }
+
+    #productos{
+        padding: 10px 10px;
+        gap: 100px;
+    }
+
+    .productos-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .productos-text h2{
+        font-size: 20px;
+    }
+
+    .productos-text p{
+        font-size: 14px;
+    }
+
+   .categorias{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+   }
+
+   .preciosYofertas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+
+   .item-description{
+    font-size: 14px;
+   }
+
+   .box-item img{
+    width: 200px;
+
+   }
+
+   .map-details{
+    display: none;
+   }
+
+   form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #contacto h2{
+    font-size: 28px;
+   }
+
+   .datospersonales input{
+    width: 100%;
+   }
+
+   .consulta textarea{
+    width: 100%;
+}
+
+    .contacto-alternativo{
+        background: white;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .redes-sociales{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .redes-sociales h3{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .redes-sociales a{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .redes-sociales span{
+        font-size: 16px;
+    }
+
+    .instagram{
+        display: none;
+    }
+
+    .footer-links{
+        gap: 20px;
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+
+     }
+
+     @media (min-width: 768px) {
+        
+        .logo{
+            width: 300px;
+        }
+        
+        .logo a{
+            font-size: 20px;
+            width: 100%;
+        }
+    
+        .logo img{
+            height: 50px;
+            width: 50px;
+        }
+        
+
+
+        .hero-intro h1{
+            font-size: 32px;
+        }
+    
+        .hero-intro p{
+            font-size: 24px;
+        }
+
+
+        .heladeria-intro h2{
+            font-size: 24px;
+        }
+
+        .heladeria-intro p{
+            font-size: 18px;
+        }
+
+
+
+
+        .datospersonales input{
+            width: 500px;
+        }
+
+        .box-item img{
+            width: 250px;
+        
+           }
+
+           .categorias{
+            display: grid;
+            grid-template-columns: 230px 230px 230px;
+            grid-template-rows: 150px 150px;
+           }
+
+           .footer-links{
+            flex-direction: row;
+            font-size: 20px;
+           }
+
+           footer p{
+            font-size: 20px;
+           }
+
+     }
+
+    
+
+       
+
+    

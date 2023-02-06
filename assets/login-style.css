@@ -34,12 +34,12 @@
         position: fixed;
         z-index: 3;
         justify-content: space-between;
+        align-items: center;
    }
 
    header span{
     
     color: lightgray;
-    padding: 20px 0 0 0;
     font-size: 14px;
    }
 
@@ -47,11 +47,12 @@
     color: #F7DBA7;
    }
 
-   .logo{
+   .logo a{
     display: flex;
+    
    }
 
-    .logo a{
+    .logo span{
         font-size: 20px;
         color: var(--text-color-1);
         font-family: 'Pacifico', cursive;
@@ -123,6 +124,20 @@ form input:last-child:hover{
     background: var(--nav-color);
     transition: 0.5s ease-in;
     font-weight: 600;
+}
+
+
+@media (max-width: 665px) {
+
+header{
+    padding: 0 10px;
+}
+
+.logo span{
+    display: none;
+}
+
+
 }
 
 

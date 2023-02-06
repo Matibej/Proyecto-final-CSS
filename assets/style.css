@@ -423,9 +423,8 @@ h1{
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
-    overflow: auto;
     
 }
 
@@ -536,7 +535,7 @@ h1{
 
 form{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     
 }
 
@@ -544,12 +543,14 @@ form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    width: 100%;
+    align-items: center;
+
 }
 
 .datospersonales input{
     height: 40px;
-    width: 500px;
+    width: 100%;
     font-size: 20px;
     outline: none;
     padding: 0px 0px 0px 10px;

@@ -38,7 +38,7 @@ header{
     top: 0;
     position: fixed;
     z-index: 3;
-    
+
 }
 
 .logo a{
@@ -94,8 +94,8 @@ nav {
 main{
     width: 100%;
     height: auto;
-    
-    
+
+
 }
 
 /* hero */
@@ -109,7 +109,7 @@ main{
     align-items: center;
     background-color: var(--color-4);
     padding: 30px 50px 100px 50px;
-    
+
     }
 
 .hero-intro{
@@ -124,9 +124,9 @@ main{
 h1{
     color: var(--text-color-1);
     font-size: 45px;
-    
-    
-    
+
+
+
 }
 
 .hero-intro p{
@@ -149,7 +149,6 @@ h1{
 
 #aboutus{
     display: flex;
-    height: auto;
     width: 100%;
     gap: 60px;
     justify-content: center;
@@ -159,10 +158,11 @@ h1{
 .aboutus-background{
     width: 100%;
     height: 500px;
-    background: url(./images/pexels-lukas-1352296.jpg) no-repeat center/cover;
+    background: var(--color-4);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -175,7 +175,7 @@ h1{
     flex-direction: column;
     gap: 30px;
     color: #283D3B;
-    background-color: #fcd6cfcc;
+    background: var(--color-2);
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
@@ -201,7 +201,7 @@ h1{
     width: 100%;
     align-items: center;
     gap: 100px;
-    
+
 }
 
 
@@ -210,7 +210,7 @@ h1{
     display: flex;
     gap: 20px;
     align-items: center;
-   
+
 }
 
 .productos-text h2{
@@ -222,7 +222,7 @@ h1{
     font-weight: 600;
     font-size: 16px;
     color: var(--color-4);
-    
+
 }
 
 
@@ -233,8 +233,8 @@ h1{
     width: 100%;
     gap: 10px;
     justify-content: center;
-    
-   
+
+
 }
 
 
@@ -251,8 +251,8 @@ h1{
 
 .cat-cucuruchos{
     background: url(./images/categoria-cucurucho.jpg) no-repeat center/cover;
-    
-    
+
+
 }
 
 .cat-cucuruchos a{
@@ -273,14 +273,14 @@ h1{
     align-items: center;
     opacity: 1;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 /* categoria palitos */
 
 .cat-palitos {
     background: url(./images/categoria_palito.jpg) no-repeat center/cover;
-    
+
 
 }
 
@@ -302,7 +302,7 @@ h1{
     align-items: center;
     opacity: 1;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 
@@ -310,7 +310,7 @@ h1{
 
 .cat-tortas{
     background: url(./images/categoria_torta.jpg) no-repeat center/cover;
-    
+
 }
 
 .cat-tortas a{
@@ -331,14 +331,14 @@ h1{
     align-items: center;
     opacity: 1;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 /* categoria batidos */
 
 .cat-batidos{
     background: url(./images/categoria_batido.jpg) no-repeat center/cover;
-    
+
 }
 
 .cat-batidos a{
@@ -365,7 +365,7 @@ h1{
 
 .cat-familiar{
     background: url(./images/categoria_familiar.jpg) no-repeat center/cover;
-   
+
 }
 
 .cat-familiar a{
@@ -392,7 +392,7 @@ h1{
 
 .cat-postres{
     background: url(./images/categoria_postre.jpg) no-repeat center/cover;
-    
+
 }
 
 .cat-postres a{
@@ -413,7 +413,7 @@ h1{
     align-items: center;
     opacity: 1;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 /* precios y ofertas */
@@ -425,7 +425,7 @@ h1{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 40px;
     justify-content: center;
-    
+
 }
 
 .box-item{
@@ -437,13 +437,13 @@ h1{
     gap: 20px;
     border-radius: 1rem;
     background: rgb(34, 31, 31)
-    
+
 }
 
 .box-item img{
     height: 200px;
     border-radius: 1rem;
-    
+
  }
 
  .item-description{
@@ -452,7 +452,7 @@ h1{
     justify-content: space-between;
     font-size: 18px;
 }
-    
+
 
 
 .item-price{
@@ -470,13 +470,13 @@ h1{
     font-weight: 600;
     text-align: center;
     font-size: 16px;
-    
+
 }
 
 .item-price a:hover{
     background: rgba(217, 146, 133);
     background: linear-gradient(90deg, rgba(217,145,133,70%) 0%, rgba(247,219,167,70%) 64%);
-    
+
 }
 
 /* ubicacion */
@@ -492,7 +492,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     right: 50px;
-    background: var(--nav-color)
+    background: var(--color-4);
 }
 
 .clock, .delivery, .minimun{
@@ -501,7 +501,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: var(--color-4);
+    color: var(--text-color-1);
 }
 
 .clock i, .delivery i, .minimun i{
@@ -512,31 +512,32 @@ h1{
     font-size: 15px;
     padding: 10px;
     text-align: center;
-    
+
 }
 
 /* contacto */
 
 #contacto{
-    background: var(--text-color-2);
+    background: var(--color-4);
     display: flex;
+    width: 100%;
     flex-direction: column;
     padding: 50px;
     gap: 100px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #contacto h2{
-    color: var(--color-1);
+    color: var(--text-color-1);
     font-size: 45px;
 }
 
 form{
     display: flex;
     gap: 20px;
-    
+
 }
 
 .datospersonales{
@@ -573,15 +574,16 @@ form{
 .consulta input{
     width: 100%;
     height: 30px;
-    
+
 }
 
 .contacto-alternativo{
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    background: url(./images/instagram3.jpg) no-repeat center/cover;
+    justify-content: center;
+    background: url(./images/instagram3.jpg);
     max-width: 1200px;
+
 }
 
 
@@ -591,20 +593,20 @@ form{
     flex-direction: column;
     color: var(--text-color-2);
     gap: 50px;
+    height: 530px;
     font-size: 24px;
     font-weight: 600;
     padding: 20px 0 0 20px;
     background: linear-gradient(to left, white, rgba(255, 255, 255, 0.616));
-    
-}
 
+}
 
 .redes-sociales h3{
     padding: 0 0 0 20px;
-    
+
 }
 
-.redes-sociales span{ 
+.redes-sociales span{
     color: var(--text-color-2);
 }
 
@@ -621,7 +623,7 @@ form{
 .redes-sociales a:hover{
     color: var(--text-color-1);
     transition: 0.5s ease-in;
-}
+} 
 
 .fa-whatsapp{
     font-size: 30px;
@@ -634,8 +636,8 @@ form{
     color: var(--text-color-2);
     font-size: 25px;
     background: white;
-    padding: 20px 0 0 0;
-    
+    padding: 20px 5px 0 0;
+
 }
 
 .instagram h3{
@@ -654,11 +656,11 @@ form{
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
 
 .instagram a:hover{
-    
+
     color: var(--text-color-1);
     transition: 0.5s ease-in;
 }
@@ -676,8 +678,8 @@ form{
     opacity: 1;
     transition: 0.5s ease-in;
     border: 1px solid white;
-    
-    
+
+
 }
 
 .galeria-items:hover{
@@ -727,12 +729,16 @@ footer{
     padding: 50px 0;
     width: 100%;
     font-size: 18px;
-    
+
 
 }
 
 .footer-links{
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 50px;
 }
 
@@ -742,6 +748,8 @@ footer{
 
 footer p{
     color: white;
+    
+    
 }
 
 footer span{

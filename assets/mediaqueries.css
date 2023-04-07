@@ -185,17 +185,20 @@
     }
 
     .redes-sociales h3{
-        font-size: 18px;
+        font-size: 26px;
         text-align: center;
+        
     }
 
     .redes-sociales a{
-        font-size: 16px;
+        font-size: 22px;
         text-align: center;
+        width: 200px;
     }
 
     .redes-sociales span{
-        font-size: 16px;
+        font-size: 26px;
+
     }
 
     .instagram{
@@ -268,19 +271,36 @@
             grid-template-rows: 150px 150px;
            }
 
+
            .footer-links{
             flex-direction: row;
             font-size: 20px;
+            
            }
 
            footer p{
-            font-size: 20px;
+            font-size: 24px;
            }
+
 
      }
 
     
+@media (min-width: 1600px) {
+    .map-details{
+        right: 200px;
+    }
+}
 
+@media (min-width: 340px) {
+    .footer-links{
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
        
 
     
